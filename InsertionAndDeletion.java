@@ -96,8 +96,8 @@ public static void delete(Node root, int key) {
         }
 
         if (keyNode != null) {
-            keyNode.data = last.data; // Copy last node's data
-            // Delete the deepest node
+            keyNode.data = last.data; 
+          
             if (parentOfLast.left == last) {
                 parentOfLast.left = null;
             } else {
