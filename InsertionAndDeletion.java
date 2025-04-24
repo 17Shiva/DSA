@@ -55,7 +55,6 @@ static class Node{
         if(root==null){
             return;
         }
-        //LNR
         inorder(root.left);
         System.out.print(root.data+" ");
         inorder(root.right);
@@ -76,7 +75,6 @@ public static void delete(Node root, int key) {
         Node last = null;
         Node parentOfLast = null;
 
-        // Find the node to delete and the last node
         while (!queue.isEmpty()) {
             Node temp = queue.poll();
             if (temp.data == key) {
